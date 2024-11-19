@@ -1,0 +1,36 @@
+name: vqlm_demo
+channels:
+    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+    - conda-forge
+dependencies:
+    - python=3.10
+    - pip
+    - numpy
+    - scipy
+    - matplotlib
+    - seaborn
+    - jupyter
+    - tqdm
+    - pillow
+    - pip:
+        - --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/
+        - --trusted-host mirrors.tuna.tsinghua.edu.cn
+        - --extra-index-url https://download.pytorch.org/whl/cu118
+        - transformers==4.34.1
+        - torch==2.0.1
+        - einops
+        - absl-py
+        - ml_collections
+        - requests
+        - mlxu==0.1.11
+        - pydantic
+        - fastapi
+        - uvicorn
+        - gradio
+        - fastapi
+        - uvicorn
+        - opencv-python-headless
+        - scikit-video
+        - scikit-image
+        - natsort
